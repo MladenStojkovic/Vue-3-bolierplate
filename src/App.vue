@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-
+import loginApi from '@/api/modules/user'
+loginApi.postVerification()
 let counter = ref(0)
 
 setInterval(() => {
