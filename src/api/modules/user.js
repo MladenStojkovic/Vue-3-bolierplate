@@ -1,7 +1,7 @@
-import service from '@/api/index';
+import service from '@/api/http.js';
 
-const loginApi = {
-  postVerification: (params) => service.get(`/posts`, params),
+const user = {
+  get: (params) => service.get(`/posts`, params),
 };
 
-export default loginApi;
+export default user;
